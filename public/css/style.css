@@ -1,0 +1,50 @@
+body {
+    background-image: url(../img/fallen-chess-pieces.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+footer {
+    background-color: #495057;
+    color: white;
+    padding-left: 2em;
+}
+
+.navbar {
+    background: blue;
+    border-radius: 5em;
+    margin: 1em 0 0;
+}
+
+.outer-board {
+    padding: 0.5em;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: rotate 1.5s linear infinite;
+    filter: blur(5px);
+}
+
+.board {
+    background: white;
+    height: 30rem;
+}
+
+#score {
+    color: white;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes rotate {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+}
